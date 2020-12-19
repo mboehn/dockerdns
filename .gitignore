@@ -1,0 +1,4 @@
+docker.sock
+.env
+env/
+.*.swp
