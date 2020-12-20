@@ -8,3 +8,11 @@ configuration via environment variables as shown below. also uses docker connect
     DOCKERDNS_NS="192.0.2.1"  #  must be ip-address, could add resolving myself but haven't done it
     DOCKERDNS_TSIGKEY="key.name"  # name of key
     DOCKERDNS_TSIGSECRET="b64 secret==" # secret
+
+
+add these labels to the containers
+
+    org.nuxis.dockerdns.enable=true
+    org.nuxis.dockerdns.hostname=www
+    org.nuxis.dockerdns.target=192.0.2.2
+    org.nuxis.dockerdns.rtype=A
